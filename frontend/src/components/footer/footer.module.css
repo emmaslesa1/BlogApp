@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+
+footer{
+    position: relative;
+    
+    background: #3c393d;
+    color: #e68eaf; 
+    text-align: center;
+    padding: 2rem 0;
+}
+.socialLinks{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.socialLinks a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.socialLinks a:hover{
+    background: #e68eaf; 
+    color: #3c393d;
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family:'Playfair Display', serif;
+    letter-spacing: 2px;
+}

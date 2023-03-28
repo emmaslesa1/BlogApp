@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+.div {
+    position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 10vh;
+	width: 100%;
+	padding: 0 2rem;
+    border-bottom: 2px solid #00000066;
+    background-color: rgba(45, 45, 45);
+	z-index: 999;
+}
+
+.user{
+	color: #e68eaf; 
+}
+
+nav a {
+	margin: 0 2rem;
+	cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+
+.title{
+    margin: 0 2rem;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+	text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+nav a:hover {
+	color: #dedbdb;
+    opacity: 0.7;
+}
+
+.div .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #eee;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+.div div,
+nav {
+	display: flex;
+	margin-left: 0;
+	align-items: center;
+}
+
+.right{
+   gap: 1rem;
+}
+
+
+.logout {
+    background-color:#e68eaf; 
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.logout:hover,
+.logout:focus {
+    background-color: #787c98;
+}
+
+p{
+    color: #4f525d;
+}
+
+
+
+@media only screen and (max-width: 1205px) {
+	.div .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.div nav{
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color:rgba(45, 45, 45);
+		transition: 1s;
+	}
+
+	.center{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+
+	.right {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+
+	.div .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+}
